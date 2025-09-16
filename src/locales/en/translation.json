@@ -1,0 +1,68 @@
+{
+    "home": {
+        "metatitle": "Armando's Portfolio - Web Developer",
+        "metadescription": "Welcome to my portfolio! I'm Armando, a passionate Web Developer dedicated to creating beautiful and functional digital experiences.",
+        "greetings": "Hi, I’m Armando",
+        "profesion": "Web Developer",
+        "description": "With a passion for creating digital solutions that combine design and functionality. I also have experience in backend and other software development technologies, which allows me to have a comprehensive view of projects."
+    },
+    "buttons": {
+        "projects": "Projects",
+        "contactMe": "Contact Me"
+    },
+    "notFound": {
+        "title": "Page Not Found",
+        "description": "It looks like you’ve reached a forgotten corner of the site. The link may be broken or the page may have been moved.",
+        "goHome": "Go back home"
+    },
+    "serverError": {
+        "title": "Server Error",
+        "description": "Sorry, something went wrong on our side. Please try reloading the page or come back later.",
+        "goHome": "Go back home"
+    },
+    "aboutMe": {
+        "metatitle": "About Me",
+        "metadescription": "Learn more about Armando, a passionate Web Developer with a strong background in modern web technologies and continuous learning.",
+        "title": "About Me",
+        "description": "Web developer in training with a strong passion for technology and continuous learning. Four years ago, I began my programming journey through online courses, starting with Python and exploring from the basics of HTML and CSS to more advanced frameworks such as Django, Flask, and Tkinter. Over time, I discovered new learning platforms like Udemy, Platzi, and Coursera, which allowed me to expand my stack with modern technologies: JavaScript, React, Next.js, Tailwind, Git/GitHub, SQL and NoSQL databases, along with solid foundations in software engineering. Recently, I completed the Meta Front-End Developer Certificate (Coursera), where I built practical projects with React, applied UX/UI principles, and developed a capstone project that integrated all my learning.",
+        "certifications": {
+            "title": "Certifications",
+            "platzi": "I studied web development fundamentals and more with courses from Platzi. I learned to build responsive websites and web applications using the latest technologies.",
+            "metaFrontend": "I completed the Meta Front-End Developer specialization on Coursera, where I gained advanced front-end development skills, including React, JavaScript, and responsive design.",
+            "udemy": "I completed several courses on Udemy, including a full course on Flutter and Dart, where I learned to develop cross-platform mobile applications with attractive and functional interfaces."
+        }
+    },
+    "sidebar": {
+        "home": "Home",
+        "about": "About Me",
+        "projects": "Projects",
+        "contact": "Contact",
+        "settings": "Settings"
+    },
+    "projects": {
+        "metatitle": "Projects",
+        "metadescription": "Explore my personal projects, showcasing my skills in Web and Mobile development.",
+        "title": "Projects",
+        "description": "Some of my personal projects, where I have applied my skills in Web and Mobile development.",
+        "pokemon": {
+            "title": "Fetching Pokémon Data",
+            "description": "A project about retrieving Pokémon data using the Pokémon API. Popular in web programming courses and a basic exercise to understand REST API consumption."
+        },
+        "web_duo": {
+            "title": "Web Duo Corazon",
+            "description": "Website for a circus artist duo (Duo Corazon). Consists of three main sections with an attractive design and image gallery."
+        },
+        "web_theliazeed": {
+            "title": "Web The Liazeed",
+            "description": "Website for an entertainment company that offers a variety of artistic performances across Europe."
+        },
+        "todo_project": {
+            "title": "Task Application (To-Do App)",
+            "description": "A to-do list built with Next.js and Tailwind CSS. Uses a PostgreSQL database with Prisma as ORM."
+        },
+        "enem_quizz": {
+            "title": "Enem Quiz",
+            "description": "A quiz application inspired by Brazil's ENEM exam. Built with Next.js and Tailwind CSS."
+        }
+    }
+}

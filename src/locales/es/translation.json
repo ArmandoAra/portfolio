@@ -1,0 +1,68 @@
+{
+    "home": {
+        "metatitle": "Portafolio de Armando - Desarrollador Web",
+        "metadescription": "¡Bienvenido a mi portafolio! Soy Armando, un apasionado Desarrollador Web dedicado a crear experiencias digitales hermosas y funcionales.",
+        "greetings": "Hola, yo soy Armando ",
+        "profesion": "Desarrollador Web",
+        "description": "Con una pasión por crear soluciones digitales que combinan diseño y funcionalidad. También tengo experiencia en backend y otras tecnologías relacionadas con el desarrollo de software, lo que me permite tener una visión integral de los proyectos."
+    },
+    "buttons": {
+        "projects": "Proyectos",
+        "contactMe": "Contáctame"
+    },
+    "notFound": {
+        "title": "Página no encontrada",
+        "description": "Parece que has llegado a un rincón olvidado del sitio. Es posible que el enlace esté roto o que la página haya sido movida.",
+        "goHome": "Volver al inicio"
+    },
+    "serverError": {
+        "title": "Error del Servidor",
+        "description": "Lo siento, algo salió mal en nuestro lado. Por favor, intenta recargar la página o vuelve más tarde.",
+        "goHome": "Volver al inicio"
+    },
+    "aboutMe": {
+        "metatitle": "Sobre mí",
+        "metadescription": "Conoce más sobre mí, mi experiencia, habilidades y certificaciones en desarrollo web y móvil.",
+        "title": "Sobre mí",
+        "description": "Desarrollador web en formación con una fuerte pasión por la tecnología y el aprendizaje continuo.Hace cuatro años inicié mi camino en la programación a través de cursos online, comenzando con Python y explorando desde lo básico de HTML y CSS hasta frameworks más avanzados como Django, Flask y Tkinter.  Con el tiempo descubrí nuevas plataformas de aprendizaje como Udemy, Platzi y Coursera, lo que me permitió ampliar mi stack con tecnologías modernas: JavaScript, React, Next.js, Tailwind, Git/GitHub, bases de datos SQL y NoSQL, además de fundamentos sólidos de ingeniería de software. Recientemente completé el programa Meta Front-End Developer Certificate (Coursera), donde desarrollé proyectos prácticos con React, enfoques de UX/UI, y un capstone project que integró todo lo aprendido.",
+        "certifications": {
+            "title": "Certificaciones",
+            "platzi": "Estudie los fundamentos de web development entre otros con cursos de Platzi. A construir sitios web y aplicaciones web responsivas utilizando las últimas tecnologías.",
+            "metaFrontend": "Completé la especialización de Meta Front-End Developer en Coursera, donde adquirí habilidades avanzadas en desarrollo front-end, incluyendo React, JavaScript y diseño responsivo.",
+            "udemy": "Completé varios cursos en Udemy, incluyendo un curso completo de Flutter y Dart, donde aprendí a desarrollar aplicaciones móviles multiplataforma con interfaces atractivas y funcionales."
+        }
+    },
+    "sidebar": {
+        "home": "Inicio",
+        "about": "Acerca de mí",
+        "projects": "Proyectos",
+        "contact": "Contacto",
+        "settings": "Configuración"
+    },
+    "projects": {
+        "metatitle": "Proyectos",
+        "metadescription": "Explora algunos de mis proyectos personales donde he aplicado mis habilidades en desarrollo web y móvil.",
+        "title": "Proyectos",
+        "description": "Algunos de mis proyectos personales, donde he aplicado mis habilidades en desarrollo Web y Móvil.",
+        "pokemon": {
+            "title": "Obteniendo datos de Pokémon",
+            "description": "Un proyecto sobre la obtención de datos de Pokémon utilizando la API de Pokémon. Popular en los cursos de programacion web y ejercicio basico para entender el consumo de APIs REST."
+        },
+        "web_duo": {
+            "title": "Web Duo Corazon",
+            "description": "Sitio web para un duo de artistas circenses (Duo Corazon). Consta de tres secciones principales con un diseño atractivo y galeria de imagenes."
+        },
+        "web_theliazeed": {
+            "title": "Web The Liazeed",
+            "description": "Sitio web para una compañía de entretenimiento que ofrece variedades de performances artísticas en europa."
+        },
+        "todo_project": {
+            "title": "Aplicación de Tareas (To-Do App)",
+            "description": "Un Todo List construido con Next.js y Tailwind CSS. Con una base de datos en PostgreSQL y Prisma como ORM."
+        },
+        "enem_quizz": {
+            "title": "Enem Quizz",
+            "description": "Una aplicación de cuestionarios (quizz) inspirada en el examen ENEM de Brasil. construido con Next.js y Tailwind CSS."
+        }
+    }
+}

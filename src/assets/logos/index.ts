@@ -1,0 +1,13 @@
+export * as css from "./css.png";
+export * as html from "./html.png";
+export * as javascript from "./js.png";
+export * as nodejs from "./nodejs.png";
+export * as react from "./physics.png";
+export * as typescript from "./typescript.png";
+export * as python from "./python.png";
+export * as sqlite from "./database.png";
+export * as docker from "./docker.png";
+export * as git from "./social.png";
+export * as nextjs from "./nextjs.png";
+export * as tailwind from "./tailwind.png";
+export * as astro from "./astro.png";
