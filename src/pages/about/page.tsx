@@ -6,6 +6,7 @@ import platziCourse from "../../assets/images/degrees/Platzi.webp";
 import metaFrontend from "../../assets/images/degrees/Coursera.webp";
 import udemyCourse from "../../assets/images/degrees/Udemy.webp";
 
+import { motion } from "framer-motion";
 
 export default function About() {
     const { t } = useTranslation();
@@ -16,13 +17,32 @@ export default function About() {
     });
 
     return (
-        <section className="relative min-h-screen flex flex-col w-full bg-slate-900 items-center px-4 md:px-16 pt-10 overflow-scroll">
-            <div className="text-center mb-2 md:mb-12 w-full md:w-2/3 lg:w-1/2 mr-[70px] p-8 border-b-2 border-slate-200">
+        <motion.section
+            className="relative min-h-screen flex flex-col w-full bg-slate-900 items-center px-4 md:px-16 pt-10 overflow-scroll"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.2 }}
+        >
+            <motion.article
+                className="text-center mb-2 md:mb-12 w-full md:w-2/3 lg:w-1/2 mr-[70px] p-8 border-b-2 border-slate-200"
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                exit={{ opacity: 0 }}
+                transition={{ duration: 0.6 }}
+            >
                 <h1 className="text-3xl font-bold mb-4 text-slate-200">{(t('aboutMe.title'))}</h1>
                 <p className="text-lg text-slate-200 p-4">{(t('aboutMe.description'))}</p>
-            </div>
+            </motion.article>
 
-            <div className="flex flex-col items-center  w-full mr-[70px] p-8">
+            <motion.div
+                className="flex flex-col items-center  w-full mr-[70px] p-8"
+                initial={{ y: 20, opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
+                exit={{ y: 20, opacity: 0 }}
+                transition={{ duration: 0.6, delay: 0.2 }}
+
+            >
 
                 <AboutCard
                     image={platziCourse}
@@ -42,8 +62,8 @@ export default function About() {
                     position={"right"}
                 />
 
-            </div>
-        </section>
+            </motion.div>
+        </motion.section>
     );
 }
 

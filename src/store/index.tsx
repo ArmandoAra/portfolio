@@ -28,7 +28,6 @@ export const store = configureStore({
 })
 
 store.subscribe(() => {
-
     try {
         const langState = store.getState().language;
         localStorage.setItem("language", JSON.stringify(langState));

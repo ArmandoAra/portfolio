@@ -6,19 +6,23 @@ import Projects from './pages/projects/page'
 import About from './pages/about/page'
 import RootLayout from './pages/layout/layout'
 import NotFound404 from './pages/not-found'
+import { AnimatePresence } from 'framer-motion'
 
 function App() {
   return (
-    <BrowserRouter>
-      <RootLayout>
-        <Routes>
-          <Route index element={<MainPage />} />
-          <Route path="about" element={<About />} />
-          <Route path="projects" element={<Projects />} />
-          <Route path="*" element={<NotFound404 />} />
-        </Routes>
-      </RootLayout>
-    </BrowserRouter>
+    <AnimatePresence >
+      <BrowserRouter>
+        <RootLayout>
+          <Routes>
+            <Route index element={<MainPage />} />
+            <Route path="about" element={<About />} />
+            <Route path="projects" element={<Projects />} />
+
+            <Route path="*" element={<NotFound404 />} />
+          </Routes>
+        </RootLayout>
+      </BrowserRouter>
+    </AnimatePresence>
   )
 }
 

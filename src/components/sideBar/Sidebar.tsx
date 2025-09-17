@@ -1,7 +1,9 @@
-import { NavLink, useLocation } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 import { FiMonitor, FiUser, FiHome, FiChevronRight } from "react-icons/fi";
 import LanguageSelector from './language';
 import { useTranslation } from 'react-i18next';
+
+import { DelayedNavLink } from "./delayNavLink";
 
 // assets
 import logo from "../../assets/logos/logo_black.png";
@@ -96,15 +98,10 @@ export function Sidebar({ state, setState }: { state: boolean; setState: (state:
                                 }
                             `}
                         >
-                            <NavLink
+                            <DelayedNavLink
                                 to={to}
-                                className={`flex w-full  h-[60px]  hover:text-gray-100 no-underline px-8
-                                    ${isActive
-                                        ? 'text-orange-100 font-semibold relative '
-                                        : 'text-slate-900'
-                                    }`
-                                }
-                                onClick={() => setState(false)}
+                                isActive={isActive}
+                                action={() => setState(false)}
                             >
                                 <div className={` flex w-full justify-around items-center 
                                 ${state ? 'justify-between' : 'justify-center '}
@@ -122,7 +119,7 @@ export function Sidebar({ state, setState }: { state: boolean; setState: (state:
                                         {t(`sidebar.${label}`)}
                                     </span>
                                 </div>
-                            </NavLink>
+                            </DelayedNavLink>
                         </div>
                     )
                 })}
