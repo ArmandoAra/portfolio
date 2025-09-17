@@ -7,6 +7,7 @@ import { DelayedNavLink } from "./delayNavLink";
 
 // assets
 import logo from "../../assets/logos/logo_black.png";
+import ScrambleText from "../textAnimation/scrambleText";
 
 const LinksArray = [
     {
@@ -116,7 +117,8 @@ export function Sidebar({ state, setState }: { state: boolean; setState: (state:
                                         ${state ? 'block' : 'hidden'}
                                     `}
                                     >
-                                        {t(`sidebar.${label}`)}
+                                        <ScrambleText text={t(`sidebar.${label}`)} />
+
                                     </span>
                                 </div>
                             </DelayedNavLink>

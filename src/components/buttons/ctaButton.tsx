@@ -1,4 +1,5 @@
 import { NavLink } from "react-router-dom";
+import ScrambleText from "../textAnimation/scrambleText";
 
 
 
@@ -24,7 +25,7 @@ export function CtaButton({ titulo, bgcolor, url }: CtaButtonProps) {
         `}
             >
 
-                {titulo}
+                <ScrambleText text={titulo} />
 
             </span>
         </NavLink>

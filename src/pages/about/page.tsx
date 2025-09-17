@@ -5,6 +5,7 @@ import { AboutCard } from "../../components/cards/AboutCard";
 import platziCourse from "../../assets/images/degrees/Platzi.webp";
 import metaFrontend from "../../assets/images/degrees/Coursera.webp";
 import udemyCourse from "../../assets/images/degrees/Udemy.webp";
+import ScrambleText from "../../components/textAnimation/scrambleText";
 
 import { motion } from "framer-motion";
 
@@ -32,7 +33,9 @@ export default function About() {
                 transition={{ duration: 0.6 }}
             >
                 <h1 className="text-3xl font-bold mb-4 text-slate-200">{(t('aboutMe.title'))}</h1>
-                <p className="text-lg text-slate-200 p-4">{(t('aboutMe.description'))}</p>
+                <p className="text-lg text-slate-200 p-4">
+                    <ScrambleText text={t('aboutMe.description')} />
+                </p>
             </motion.article>
 
             <motion.div

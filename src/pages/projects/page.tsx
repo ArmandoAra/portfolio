@@ -1,63 +1,11 @@
 import ProjectCard from "../../components/cards/ProjectCard";
 
-// iconos
-import typescript from "../../assets/logos/typescript.png";
-import tailwind from "../../assets/logos/tailwind.png";
-import astro from "../../assets/logos/astro.png";
-import javascript from "../../assets/logos/js.png";
-import react from "../../assets/logos/physics.png";
 
-import duoCorazon from "../../assets/images/duoCorazon.webp";
-import theLiazeed from "../../assets/images/the_liazeed_logo_white.png";
-import { ProjectHeader } from "./header";
 import { useMetadata } from "../../hooks/metadata/useMetadata";
 import { useTranslation } from "react-i18next";
 import { motion } from "framer-motion";
-
-
-const projects = [
-    {
-        refTranslation: "web_duo",
-        title: "Web de Presentacion Circense",
-        link: "https://www.duocorazon.com/",
-        tech: [astro, javascript, react, tailwind],
-        bgImage: duoCorazon,
-        outside: true
-    },
-    {
-        refTranslation: "web_theliazeed",
-        title: "The Liazeed Entertainment Company",
-        link: "https://theliazeed.de/",
-        tech: [typescript, react, tailwind],
-        bgImage: theLiazeed,
-        outside: true
-    },
-    // {
-    //     refTranslation: "todo_project",
-    //     title: "Mi Proyecto de Todo",
-    //     link: "/projects/todos",
-    //     tech: [nextjs, tailwind],
-    //     bgImage: null,
-    //     outside: false
-    // },
-    // {
-    //     refTranslation: "enem_quizz",
-    //     title: "Enem Quizz",
-    //     link: "/projects/enem",
-    //     tech: [nextjs, tailwind],
-    //     bgImage: null,
-    //     outside: false
-    // },
-    // {
-    //     refTranslation: "pokemon",
-    //     title: "Obteniendo datos de Pokémon",
-    //     link: "/projects/pokemons",
-    //     tech: [nextjs, tailwind, typescript],
-    //     bgImage: pokemons,
-    //     outside: false
-    // },
-];
-
+import ScrambleText from "../../components/textAnimation/scrambleText";
+import { projects } from "./constants";
 
 export default function Projects() {
     const { t } = useTranslation();
@@ -67,8 +15,6 @@ export default function Projects() {
         title: t('projects.metatitle'),
         description: t('projects.metadescription')
     });
-
-
     return (
         <motion.div
             className="fles flex-col overflow-scroll"
@@ -84,10 +30,13 @@ export default function Projects() {
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.5 }}
                     >
-
-                        <ProjectHeader />
+                        <div className="mb-6 max-w-lg relative left-10">
+                            <h2 className="font-sans antialiased font-light text-3xl md:text-4xl lg:text-4xl text-stone-100 mb-4 [text-wrap:_balance]">{t("projects.title")}</h2>
+                            <h3 className="font-sans antialiased font-bold  text-xl w-4/5 md:w-full md:text-2xl text-stone-200 [text-wrap:_balance]">
+                                <ScrambleText text={t("projects.description")} />
+                            </h3>
+                        </div>
                     </motion.article>
-
                     <motion.div
                         className="grid grid-cols-1 md:grid-cols-2 gap-6 p-8"
                         initial={{ opacity: 0, y: 20 }}
