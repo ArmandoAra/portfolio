@@ -2,9 +2,9 @@
 import { useTranslation } from "react-i18next";
 import { useMetadata } from "../../hooks/metadata/useMetadata";
 import { AboutCard } from "../../components/cards/AboutCard";
-import platziCourse from "../../assets/degrees/Platzi.png";
-import metaFrontend from "../../assets/degrees/Coursera.png";
-import udemyCourse from "../../assets/degrees/Udemy.png";
+import platziCourse from "../../assets/images/degrees/Platzi.webp";
+import metaFrontend from "../../assets/images/degrees/Coursera.webp";
+import udemyCourse from "../../assets/images/degrees/Udemy.webp";
 
 
 export default function About() {

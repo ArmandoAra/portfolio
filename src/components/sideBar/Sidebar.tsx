@@ -1,8 +1,10 @@
 import { NavLink, useLocation } from "react-router-dom";
-import logo from "../../assets/logos/logo_aa.png";
 import { FiMonitor, FiUser, FiHome, FiChevronRight } from "react-icons/fi";
 import LanguageSelector from './language';
 import { useTranslation } from 'react-i18next';
+
+// assets
+import logo from "../../assets/logos/logo_black.png";
 
 const LinksArray = [
     {

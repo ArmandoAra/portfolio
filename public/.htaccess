@@ -1,6 +1,13 @@
 <IfModule mod_rewrite.c>
-  RewriteEngine On RewriteBase / # Permitir acceso directo a archivos existentes
-  RewriteCond %{REQUEST_FILENAME} -f [OR] RewriteCond %{REQUEST_FILENAME} -d
-  RewriteRule ^ - [L] # Redirigir todo lo demás a index.html RewriteRule ^
-  index.html [L]
+  RewriteEngine On
+  RewriteBase /
+
+  # Si es un archivo o directorio real, lo sirve normalmente
+  RewriteCond %{REQUEST_FILENAME} -f [OR]
+  RewriteCond %{REQUEST_FILENAME} -d
+  RewriteRule ^ - [L]
+
+  # Si no, redirige a index.html
+  RewriteRule ^ index.html [L]
 </IfModule>
+
