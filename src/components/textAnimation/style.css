@@ -1,0 +1,11 @@
+.fade-text {
+  transition: opacity 150ms ease-in-out;
+}
+
+.fade-text--visible {
+  opacity: 1;
+}
+
+.fade-text--hidden {
+  opacity: 0;
+}

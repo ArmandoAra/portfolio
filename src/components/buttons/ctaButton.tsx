@@ -1,7 +1,5 @@
 import { NavLink } from "react-router-dom";
-import ScrambleText from "../textAnimation/scrambleText";
-
-
+import FadeText from "../textAnimation/fadeTransition";
 
 interface CtaButtonProps {
     funcion?: () => void;
@@ -25,7 +23,7 @@ export function CtaButton({ titulo, bgcolor, url }: CtaButtonProps) {
         `}
             >
 
-                <ScrambleText text={titulo} />
+                <FadeText text={titulo} />
 
             </span>
         </NavLink>

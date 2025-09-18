@@ -1,4 +1,4 @@
-import ScrambleText from "../textAnimation/scrambleText";
+import FadeText from "../textAnimation/fadeTransition";
 
 
 interface AboutCardProps {
@@ -15,7 +15,7 @@ export function AboutCard({ image, description, position }: AboutCardProps) {
                  `}>
             <div className="md:w-5/12">
                 <p className="text-slate-200 mb-6 text-center md:text-justify text-lg">
-                    <ScrambleText text={description} />
+                    <FadeText text={description} />
                 </p>
             </div>
 

@@ -5,9 +5,9 @@ import { AboutCard } from "../../components/cards/AboutCard";
 import platziCourse from "../../assets/images/degrees/Platzi.webp";
 import metaFrontend from "../../assets/images/degrees/Coursera.webp";
 import udemyCourse from "../../assets/images/degrees/Udemy.webp";
-import ScrambleText from "../../components/textAnimation/scrambleText";
 
 import { motion } from "framer-motion";
+import FadeText from "../../components/textAnimation/fadeTransition";
 
 export default function About() {
     const { t } = useTranslation();
@@ -32,9 +32,11 @@ export default function About() {
                 exit={{ opacity: 0 }}
                 transition={{ duration: 0.6 }}
             >
-                <h1 className="text-3xl font-bold mb-4 text-slate-200">{(t('aboutMe.title'))}</h1>
+                <h1 className="text-3xl font-bold mb-4 text-slate-200">
+                    <FadeText text={t('aboutMe.title')} />
+                </h1>
                 <p className="text-lg text-slate-200 p-4">
-                    <ScrambleText text={t('aboutMe.description')} />
+                    <FadeText text={t('aboutMe.description')} />
                 </p>
             </motion.article>
 

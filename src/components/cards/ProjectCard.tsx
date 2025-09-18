@@ -1,7 +1,6 @@
 
 import { useTranslation } from "react-i18next";
-import ScrambleText from "../textAnimation/scrambleText";
-
+import FadeText from "../textAnimation/fadeTransition";
 
 interface ProjectProps {
     refTranslation: string;
@@ -67,7 +66,7 @@ export default function ProjectCard({
             {/* Contenido */}
             <div className="relative z-10 p-6">
                 <blockquote className="font-sans font-bold text-lg md:text-xl lg:text-2xl text-stone-200 [text-wrap:_balance] md:text-start text-center stroke-black">
-                    <ScrambleText text={t(`projects.${refTranslation}.description`)} />
+                    <FadeText text={t(`projects.${refTranslation}.description`)} />
                 </blockquote>
             </div>
 

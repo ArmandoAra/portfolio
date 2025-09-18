@@ -4,8 +4,8 @@ import ProjectCard from "../../components/cards/ProjectCard";
 import { useMetadata } from "../../hooks/metadata/useMetadata";
 import { useTranslation } from "react-i18next";
 import { motion } from "framer-motion";
-import ScrambleText from "../../components/textAnimation/scrambleText";
 import { projects } from "./constants";
+import FadeText from "../../components/textAnimation/fadeTransition";
 
 export default function Projects() {
     const { t } = useTranslation();
@@ -33,7 +33,7 @@ export default function Projects() {
                         <div className="mb-6 max-w-lg relative left-10">
                             <h2 className="font-sans antialiased font-light text-3xl md:text-4xl lg:text-4xl text-stone-100 mb-4 [text-wrap:_balance]">{t("projects.title")}</h2>
                             <h3 className="font-sans antialiased font-bold  text-xl w-4/5 md:w-full md:text-2xl text-stone-200 [text-wrap:_balance]">
-                                <ScrambleText text={t("projects.description")} />
+                                <FadeText text={t("projects.description")} />
                             </h3>
                         </div>
                     </motion.article>
