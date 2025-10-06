@@ -75,7 +75,7 @@ function Language({
             }
                                 `}>
             <img src={imageSrc} alt={title} className="w-9 h-6 rounded-xl" width={26} height={26} />
-            {state && <span className="dark:text-slate-800 hover:dark:text-white">{title}</span>}
+            {state && <span className="text-slate-800 ">{title}</span>}
         </div>
     );
 }

@@ -46,7 +46,7 @@ export default function MainPage() {
                     transition={{ duration: 0.3, delay: 0.3 }}
                 >
                     <div className="relative mt-8 md:mt-10 space-y-8 sm:w-10/12 md:w-2/3 lg:ml-0 sm:mx-auto text-center lg:text-left lg:mr-auto lg:w-7/12">
-                        <p className="sm:text-lg text-gray-700 dark:text-gray-300 lg:w-11/12">
+                        <p className="sm:text-lg text-slate-100 lg:w-11/12">
                             <FadeText text={t('home.description')} />
                         </p>
                         <div className="grid grid-cols-1 gap-10 md:grid-cols-2  h-24 lg:justify-items-start  lg:gap-0">

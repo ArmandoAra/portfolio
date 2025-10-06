@@ -51,10 +51,10 @@ export function Sidebar({ state, setState }: { state: boolean; setState: (state:
                 className={`
                     fixed right-0 top-0 pt-5 z-40 h-full transition-all duration-300 ease-in-out
                     overflow-y-auto overflow-x-hidden
-                     bg-white border-l-2 border-gray-200 dark:bg-gray-100 dark:border-orange-400
+                      border-l-2 border-orange-400
                     scrollbar-thin scrollbar-thumb-gray-400 dark:scrollbar-thumb-gray-600
                     scrollbar-track-transparent scrollbar-thumb-rounded-lg
-                    ${state ? 'w-[95vw] bg-orange-400/95 md:w-[220px]' : 'w-[65px]'}
+                    ${state ? 'w-[95vw]  bg-cyan-500  md:w-[220px] ' : 'bg-gray-100   w-[65px]'}
                 `}
             >
                 {/* Logo Content */}

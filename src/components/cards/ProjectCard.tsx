@@ -47,7 +47,7 @@ export default function ProjectCard({
 
             {/* Title y tech */}
             <div className="relative z-10 w-full pt-10 flex flex-col  md:flex-row text-center md:text-start px-6 pb-6 items-center justify-between gap-4">
-                <p className="font-sans text-4xl text-stone-100 font-semibold stroke-black">{t(`projects.${refTranslation}.title`)}</p>
+                <p className="font-sans text-4xl text-stone-100 font-semibold project-title">{t(`projects.${refTranslation}.title`)}</p>
                 {tech && tech.length > 0 && (
                     <div className="flex gap-2 flex-wrap justify-center md:justify-start">
                         {tech.map((icon, idx) => (
