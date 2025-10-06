@@ -15,10 +15,10 @@ export function DelayedNavLink({ to, isActive, action, children }: { to: string;
 
     return (
         <a
-            className={`flex w-full  h-[60px]  hover:text-gray-100 no-underline px-8
+            className={`flex w-full  h-[60px]  hover:text-gray-100 no-underline px-8 text-slate-800
                                     ${isActive
-                    ? 'text-orange-100 font-semibold relative '
-                    : 'text-slate-900'
+                    ? ' font-semibold relative'
+                    : ''
                 }`
             }
             href={to} onClick={handleClick}>

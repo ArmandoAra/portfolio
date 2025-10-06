@@ -47,3 +47,8 @@
   border-radius: 50%;
   animation: float infinite ease-in-out;
 }
+
+.myname {
+  -webkit-text-stroke: 1px rgb(241, 145, 35); /* Color del borde */
+  font-family: Geneva, Verdana, sans-serif;
+}

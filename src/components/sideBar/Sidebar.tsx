@@ -36,10 +36,10 @@ export function Sidebar({ state, setState }: { state: boolean; setState: (state:
         <>
             <a
                 className={`fixed top-[100px] w-10 h-10 rounded-full 
-                    bg-orange-200 shadow-md hover:shadow-lg
+                    bg-slate-100 shadow-md hover:shadow-lg border-2 border-orange-400
                     flex items-center justify-center cursor-pointer transition-all duration-200 z-50
-                    text-orange-900
-                    ${state ? 'right-[87vw] md:right-[195px] ' : 'right-[40px] rotate-180'}
+                    text-slate-900
+                    ${state ? 'left-[1vw] sm:left-[auto] sm:right-[92vw] md:right-[195px] ' : 'right-[43px] rotate-180'}
                 `}
                 onClick={() => setState(!state)}
             >
@@ -51,7 +51,7 @@ export function Sidebar({ state, setState }: { state: boolean; setState: (state:
                 className={`
                     fixed right-0 top-0 pt-5 z-40 h-full transition-all duration-300 ease-in-out
                     overflow-y-auto overflow-x-hidden
-                     bg-orange-400 
+                     bg-white border-l-2 border-gray-200 dark:bg-gray-100 dark:border-orange-400
                     scrollbar-thin scrollbar-thumb-gray-400 dark:scrollbar-thumb-gray-600
                     scrollbar-track-transparent scrollbar-thumb-rounded-lg
                     ${state ? 'w-[95vw] bg-orange-400/95 md:w-[220px]' : 'w-[65px]'}
@@ -91,10 +91,10 @@ export function Sidebar({ state, setState }: { state: boolean; setState: (state:
                         <div
                             key={label}
                             className={`flex justify-between mx-0 my-[5px] transition-all duration-300 ease-in-out relative
-                                hover:bg-slate-900/65 
+                                hover:bg-gradient-to-r hover:from-slate-900/65 hover:to-slate-900/0 
                                 ${state ? 'px-0' : 'px-[5%]'}
                                 ${isActive
-                                    ? 'before:content-[""] before:absolute before:right-0 before:h-full before:w-1 before:bg-orange-100 before:rounded-l-lg before:shadow-[-10px_0_30px_10px_rgba(230,200,225,0.6)]'
+                                    ? 'before:content-[""] before:absolute before:right-0 before:h-full before:w-1 before:bg-orange-400 before:rounded-l-lg before:shadow-[-10px_0_30px_10px_rgba(5,5,5,0.4)]'
                                     : ''
                                 }
                             `}
@@ -108,12 +108,12 @@ export function Sidebar({ state, setState }: { state: boolean; setState: (state:
                                 ${state ? 'justify-between' : 'justify-center '}
                                     `}>
                                     <div className=" flex">
-                                        <div className="text-[25px]">
+                                        <div className="text-[25px]  ">
                                             {icon}
                                         </div>
                                     </div>
                                     <span
-                                        className={`transition-opacity duration-300 ease-in-out text-2xl md:text-sm uppercase
+                                        className={`transition-opacity duration-300 ease-in-out text-2xl md:text-sm uppercase dark:text-slate-800 
                                         ${state ? 'block' : 'hidden'}
                                     `}
                                     >

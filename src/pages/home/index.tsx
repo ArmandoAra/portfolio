@@ -20,7 +20,7 @@ export default function MainPage() {
 
     return (
         <motion.section
-            className=" relative pt-16  lg:pt-44 pr-[80px] w-full overflow-hidden h-full"
+            className=" pt-16  lg:pt-44 pr-[80px] w-full overflow-y-auto "
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
@@ -29,12 +29,13 @@ export default function MainPage() {
             <AnimatedBackground />
             <div className="relative flex flex-col  xl:container m-auto px-6 md:px-12 lg:px-6 top-0 lg:top-48 ">
                 <motion.h1
-                    className=" sm:w-10/12 md:w-2/3 font-black   text-4xl text-center mx-auto lg:m-0 md:text-left sm:text-5xl md:text-6xl lg:w-auto  xl:text-7xl text-orange-300 leading-tight "
+                    className=" sm:w-10/12 md:w-2/3 font-black   text-4xl text-center mx-auto lg:m-0 md:text-left sm:text-5xl md:text-6xl lg:w-auto  xl:text-7xl  leading-tight "
                     initial={{ y: -20, opacity: 0 }}
                     animate={{ y: 0, opacity: 1 }}
                     transition={{ duration: 0.5, delay: 0.2 }}
                 >
-                    <FadeText text={t('home.greetings')} />
+                    {/* Aqui me quedeee */}
+                    <FadeText text={t('home.greetings')} className="text-slate-100 myname" />
                     <br className="lg:block h-1 w-full" />
                     <span className="relative text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-cyan-500 dark:from-blue-400 dark:to-cyan-300">
                         <FadeText text={t('home.profesion')} />
@@ -67,25 +68,26 @@ export default function MainPage() {
             </div>
 
             <motion.div
-                className="mt-12 md:mt-0 lg:absolute -right-10 lg:w-1/2 bottom-0 overflow-hidden "
+                className="mt-12 md:mt-0 relative h-[30vh] lg:h-auto lg:absolute -right-0 lg:w-1/2 bottom-0  "
                 // viene desde la derecha
                 initial={{ x: 100, opacity: 0 }}
                 animate={{ x: 0, opacity: 1 }}
                 transition={{ duration: 0.5, delay: 0.4 }}
             >
-                <div className="relative w-full flex justify-center lg:justify-start  h-auto lg:h-[70vh]">
-                    <div aria-hidden="true" className="absolute scale-75 md:scale-110 inset-0 m-auto h-screen "></div>
+                <div className="h-full">
+                    <div aria-hidden="true" className=""></div>
                     <div>
                         <img
                             src={profileImage}
                             alt="Profile image"
-                            className="w-auto h-full"
+                            className="h-full object-cover lg:object-contain  mx-auto"
                             width={400}
                             height={400}
                         />
                     </div>
                 </div>
             </motion.div>
+
         </motion.section>
     );
 }

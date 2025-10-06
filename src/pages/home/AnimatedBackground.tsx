@@ -30,7 +30,7 @@ const AnimatedBackground: React.FC = () => {
     }, []);
 
     return (
-        <div className="absolute inset-0 overflow-hidden">
+        <div className="absolute inset-0 overflow-hidden ">
             {/* Fondo oscuro */}
             <div className="absolute inset-0 bg-gray-900"></div>
 

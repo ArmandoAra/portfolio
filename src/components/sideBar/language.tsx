@@ -70,12 +70,12 @@ function Language({
                                  duration-300 ease-in-out relative cursor-pointer
                                 hover:bg-slate-900/65 w-full h-10
                                  ${(langActive)
-                ? 'before:content-[""] before:absolute before:right-0 before:h-full before:w-1 before:bg-orange-100 before:rounded-l-lg before:shadow-[-10px_0_30px_10px_rgba(230,200,225,0.6)]'
+                ? 'before:content-[""] before:absolute before:right-0 before:h-full before:w-1 before:bg-orange-400 before:rounded-l-lg before:shadow-[-10px_0_30px_10px_rgba(230,200,225,0.6)]'
                 : ''
             }
                                 `}>
             <img src={imageSrc} alt={title} className="w-9 h-6 rounded-xl" width={26} height={26} />
-            {state && <span className="text-white">{title}</span>}
+            {state && <span className="dark:text-slate-800 hover:dark:text-white">{title}</span>}
         </div>
     );
 }

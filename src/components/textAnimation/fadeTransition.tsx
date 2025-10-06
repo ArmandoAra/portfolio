@@ -6,9 +6,10 @@ import './style.css';
 type Props = {
     text: string;      // texto final
     duration?: number; // tiempo de animación en ms
+    className?: string; // clases adicionales
 };
 
-export default function FadeText({ text, duration = 300 }: Props) {
+export default function FadeText({ text, duration = 300, className }: Props) {
     const { i18n } = useTranslation();
     const [display, setDisplay] = useState(text);
     const [isVisible, setIsVisible] = useState(true);
@@ -38,7 +39,7 @@ export default function FadeText({ text, duration = 300 }: Props) {
 
     return (
         <span
-            className={`fade-text ${isVisible ? 'fade-text--visible' : 'fade-text--hidden'}`}
+            className={`fade-text ${className} ${isVisible ? 'fade-text--visible' : 'fade-text--hidden'}`}
         >
             {display}
         </span>
