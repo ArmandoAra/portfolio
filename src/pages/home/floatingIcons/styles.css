@@ -1,0 +1,125 @@
+@keyframes snakeMove {
+  0% {
+    transform: translateX(0) translateY(75vh);
+    opacity: 0;
+  }
+  3% {
+    opacity: 0;
+  }
+  10% {
+    transform: translateX(10vw) translateY(85vh);
+    opacity: 1;
+  }
+  17% {
+    transform: translateX(17vw) translateY(86vh);
+  }
+  24% {
+    transform: translateX(24vw) translateY(85vh);
+  }
+  31% {
+    transform: translateX(31vw) translateY(86vh);
+  }
+  38% {
+    transform: translateX(38vw) translateY(85vh);
+  }
+  45% {
+    transform: translateX(45vw) translateY(86vh);
+  }
+  50% {
+    transform: translateX(50vw) translateY(85vh);
+  }
+  57% {
+    transform: translateX(57vw) translateY(86vh);
+  }
+  64% {
+    transform: translateX(64vw) translateY(1vh);
+  }
+  71% {
+    transform: translateX(71vw) translateY(1vh);
+  }
+  78% {
+    transform: translateX(78vw) translateY(2vh);
+  }
+  85% {
+    transform: translateX(85vw) translateY(1vh);
+    opacity: 1;
+  }
+  92% {
+    transform: translateX(92vw) translateY(1vh);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(105vw) translateY(2vh);
+    opacity: 0;
+  }
+}
+
+/* Solo en el top de arriba de la pantalla */
+@keyframes snakeMoveMobile {
+  0% {
+    transform: translateX(0) translateY(0vh);
+    opacity: 0;
+  }
+  3% {
+    opacity: 0;
+  }
+  10% {
+    transform: translateX(10vw) translateY(1vh);
+    opacity: 1;
+  }
+  17% {
+    transform: translateX(17vw) translateY(2vh);
+  }
+  24% {
+    transform: translateX(24vw) translateY(1vh);
+  }
+  31% {
+    transform: translateX(31vw) translateY(2vh);
+  }
+  38% {
+    transform: translateX(38vw) translateY(1vh);
+  }
+  45% {
+    transform: translateX(45vw) translateY(2vh);
+  }
+  50% {
+    transform: translateX(50vw) translateY(1vh);
+  }
+  57% {
+    transform: translateX(57vw) translateY(2vh);
+  }
+  64% {
+    transform: translateX(64vw) translateY(1vh);
+  }
+  71% {
+    transform: translateX(71vw) translateY(1vh);
+  }
+  78% {
+    transform: translateX(78vw) translateY(2vh);
+  }
+  85% {
+    transform: translateX(85vw) translateY(1vh);
+    opacity: 1;
+  }
+  92% {
+    transform: translateX(92vw) translateY(1vh);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(105vw) translateY(2vh);
+    opacity: 0;
+  }
+}
+
+.snake-icon {
+  animation: snakeMove 110s infinite;
+  position: absolute;
+  left: 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+  .snake-icon {
+    display: none;
+  }
+}

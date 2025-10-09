@@ -9,6 +9,7 @@ import { useMetadata } from '../../hooks/metadata/useMetadata';
 
 import { motion } from 'framer-motion';
 import FadeText from '../../components/textAnimation/fadeTransition';
+import FloatingIcons from './floatingIcons/floatingIcons';
 
 export default function MainPage() {
     const { t } = useTranslation();
@@ -26,8 +27,10 @@ export default function MainPage() {
             exit={{ opacity: 0 }}
             transition={{ duration: 0.2 }}
         >
+
             <AnimatedBackground />
-            <div className="relative flex flex-col  xl:container m-auto px-6 md:px-12 lg:px-6 top-0 lg:top-48 ">
+            <FloatingIcons />
+            <div className="relative flex flex-col  xl:container m-auto px-6 md:px-12 lg:px-6 top-0 lg:top-16">
                 <motion.h1
                     className=" sm:w-10/12 md:w-2/3 font-black   text-4xl text-center mx-auto lg:m-0 md:text-left sm:text-5xl md:text-6xl lg:w-auto  xl:text-7xl  leading-tight "
                     initial={{ y: -20, opacity: 0 }}
@@ -87,6 +90,7 @@ export default function MainPage() {
                     </div>
                 </div>
             </motion.div>
+
 
         </motion.section>
     );

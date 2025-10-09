@@ -1,0 +1,96 @@
+/* sidebar-anim.css
+   Animación "gelatina" refinada para sidebar fijo a la derecha.
+   - transform-origin en la derecha para que parezca anclado.
+   - usa translate + scaleX/scaleY para sensación elástica real.
+   - box-shadow sutil para peso visual.
+   - soporte prefers-reduced-motion.
+*/
+
+/* --- Keyframes --- */
+@keyframes jelly-open {
+  0% {
+    transform: translateZ(0) translateX(12px) scaleX(0.92) scaleY(1.02);
+    opacity: 0.98;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  }
+  16% {
+    transform: translateX(-10px) scaleX(1.12) scaleY(0.9);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+  }
+  38% {
+    transform: translateX(6px) scaleX(0.96) scaleY(1.02);
+  }
+  60% {
+    transform: translateX(-3px) scaleX(1.03) scaleY(0.98);
+  }
+  80% {
+    transform: translateX(0.6px) scaleX(0.995) scaleY(1.003);
+  }
+  100% {
+    transform: translateX(0) scaleX(1) scaleY(1);
+    opacity: 1;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  }
+}
+
+@keyframes jelly-close {
+  0% {
+    transform: translateZ(0) translateX(0) scaleX(1) scaleY(1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  }
+  12% {
+    transform: translateX(-6px) scaleX(1.06) scaleY(0.96);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+  }
+  36% {
+    transform: translateX(10px) scaleX(0.92) scaleY(1.08);
+    opacity: 0.98;
+  }
+  60% {
+    transform: translateX(-4px) scaleX(1.02) scaleY(0.98);
+  }
+  100% {
+    transform: translateX(0) scaleX(1) scaleY(1);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+    opacity: 1;
+  }
+}
+
+/* --- Utility / clases públicas --- */
+.jelly-bounce {
+  /* clase genérica si prefieres un solo nombre */
+  transform-origin: right center;
+  will-change: transform, box-shadow, opacity;
+  backface-visibility: hidden;
+  /* GPU hint */
+  transform: translateZ(0);
+}
+
+.jelly-bounce--open {
+  transform-origin: right center;
+  will-change: transform, box-shadow, opacity;
+  animation: jelly-open 760ms cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.jelly-bounce--close {
+  transform-origin: right center;
+  will-change: transform, box-shadow, opacity;
+  animation: jelly-close 620ms cubic-bezier(0.4, 0, 0.2, 1) both;
+}
+
+/* Opcional: transición limpia para la propiedad width / background si usas Tailwind transition-all */
+.sidebar-smooth {
+  transition-property: width, background-color, opacity;
+  transition-duration: 320ms;
+  transition-timing-function: cubic-bezier(0.2, 0.9, 0.2, 1);
+}
+
+/* Respeto a usuarios con preferencia por menos movimiento */
+@media (prefers-reduced-motion: reduce) {
+  .jelly-bounce--open,
+  .jelly-bounce--close,
+  .jelly-bounce {
+    animation: none !important;
+    transition: width 220ms ease-in-out;
+  }
+}

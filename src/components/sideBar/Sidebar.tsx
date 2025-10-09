@@ -2,12 +2,14 @@ import { useLocation } from "react-router-dom";
 import { FiMonitor, FiUser, FiHome, FiChevronRight } from "react-icons/fi";
 import LanguageSelector from './language';
 import { useTranslation } from 'react-i18next';
+import "./sidebar.css";
 
 import { DelayedNavLink } from "./delayNavLink";
 
 // assets
 import logo from "../../assets/logos/logo_black.png";
 import ScrambleText from "../textAnimation/scrambleText";
+import { useEffect, useRef } from "react";
 
 const LinksArray = [
     {
@@ -32,6 +34,27 @@ export function Sidebar({ state, setState }: { state: boolean; setState: (state:
     const { pathname } = useLocation();
     const { t } = useTranslation();
 
+    const ref = useRef<HTMLDivElement | null>(null)
+
+    useEffect(() => {
+        const el = ref.current
+        if (!el) return
+
+        // Limpiar cualquier animación previa
+        el.classList.remove('jelly-bounce--open', 'jelly-bounce--close')
+
+        // Elegir animación según el estado
+        const cls = state ? 'jelly-bounce--open' : 'jelly-bounce--close'
+        el.classList.add(cls)
+
+        // Remover clase después de terminar la animación
+        const timeout = setTimeout(() => {
+            el.classList.remove(cls)
+        }, state ? 760 : 620)
+
+        return () => clearTimeout(timeout)
+    }, [state])
+
     return (
         <>
             <a
@@ -48,14 +71,14 @@ export function Sidebar({ state, setState }: { state: boolean; setState: (state:
 
             {/* Sidebar Container */}
             <div
+                ref={ref}
                 className={`
-                    fixed right-0 top-0 pt-5 z-40 h-full transition-all duration-300 ease-in-out
-                    overflow-y-auto overflow-x-hidden
-                      border-l-2 border-orange-400
-                    scrollbar-thin scrollbar-thumb-gray-400 dark:scrollbar-thumb-gray-600
-                    scrollbar-track-transparent scrollbar-thumb-rounded-lg
-                    ${state ? 'w-[95vw]  bg-cyan-500  md:w-[220px] ' : 'bg-gray-100   w-[65px]'}
-                `}
+        fixed right-0 top-0 pt-5 z-40 h-full transition-all duration-300
+        overflow-y-auto overflow-x-hidden border-2 border-orange-400
+        scrollbar-thin scrollbar-thumb-gray-400 dark:scrollbar-thumb-gray-600
+        scrollbar-track-transparent scrollbar-thumb-rounded-lg
+        ${state ? 'w-[95vw] md:w-[220px] bg-cyan-500' : 'w-[65px] bg-gray-100'}
+      `}
             >
                 {/* Logo Content */}
                 <div className={`flex w-full justify-center items-center pt-[30px] md:pt-[15px] pb-[120px]

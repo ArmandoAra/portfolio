@@ -11,3 +11,7 @@ export * as git from "./social.png";
 export * as nextjs from "./nextjs.png";
 export * as tailwind from "./tailwind.png";
 export * as astro from "./astro.png";
+export * as physics from "./physics.png";
+export * as social from "./social.png";
+export * as database from "./database.png";
+
