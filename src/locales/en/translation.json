@@ -56,6 +56,10 @@
             "title": "Web The Liazeed",
             "description": "Website for an entertainment company that offers a variety of artistic performances across Europe."
         },
+        "teslo_shop": {
+            "title": "Teslo Shop",
+            "description": "An e-commerce platform for selling sneakers, built with Next.js and Tailwind CSS. Features include user authentication, product management, and payment processing with PayPal. Utilizes a PostgreSQL database with Prisma as ORM."
+        },
         "todo_project": {
             "title": "Task Application (To-Do App)",
             "description": "A to-do list built with Next.js and Tailwind CSS. Uses a PostgreSQL database with Prisma as ORM."

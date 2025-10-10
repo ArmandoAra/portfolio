@@ -4,9 +4,11 @@ import tailwind from "../../assets/logos/tailwind.png";
 import astro from "../../assets/logos/astro.png";
 import javascript from "../../assets/logos/js.png";
 import react from "../../assets/logos/physics.png";
+import nextjs from "../../assets/logos/nextjs.png";
 
 import duoCorazon from "../../assets/images/duoCorazon.webp";
 import theLiazeed from "../../assets/images/the_liazeed_logo_white.png";
+import tesloImg from "../../assets/images/projects/teslo/1657891-00-A_1.jpg"
 
 export const projects = [
     {
@@ -23,6 +25,14 @@ export const projects = [
         link: "https://theliazeed.de/",
         tech: [typescript, react, tailwind],
         bgImage: theLiazeed,
+        outside: true
+    },
+    {
+        refTranslation: "teslo_shop",
+        title: "Teslo Shop",
+        link: "https://github.com/ArmandoAra/teslo-shop",
+        tech: [typescript, react, tailwind, nextjs],
+        bgImage: tesloImg,
         outside: true
     },
     // {
