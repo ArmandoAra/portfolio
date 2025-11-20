@@ -5,12 +5,24 @@ import astro from "../../assets/logos/astro.png";
 import javascript from "../../assets/logos/js.png";
 import react from "../../assets/logos/physics.png";
 import nextjs from "../../assets/logos/nextjs.png";
+import postgress from "../../assets/logos/postgres.webp";
+import prisma from "../../assets/logos/prisma.png";
+import docker from "../../assets/logos/docker.png";
 
 import duoCorazon from "../../assets/images/duoCorazon.webp";
 import theLiazeed from "../../assets/images/the_liazeed_logo_white.png";
-import tesloImg from "../../assets/images/projects/teslo/1657891-00-A_1.jpg"
+import tesloImg from "../../assets/images/projects/teslo/1657891-00-A_1.jpg";
+import myTree from "../../assets/images/projects/mytree/over_background.png"
 
 export const projects = [
+    {
+        refTranslation: "my_Tree",
+        title: "Aplicacion Web My Tree",
+        link: "/projects/my-tree",
+        tech: [nextjs, typescript, tailwind, react, postgress, prisma, docker],
+        bgImage: myTree,
+        outside: false
+    },
     {
         refTranslation: "web_duo",
         title: "Web de Presentacion Circense",
@@ -35,28 +47,4 @@ export const projects = [
         bgImage: tesloImg,
         outside: true
     },
-    // {
-    //     refTranslation: "todo_project",
-    //     title: "Mi Proyecto de Todo",
-    //     link: "/projects/todos",
-    //     tech: [nextjs, tailwind],
-    //     bgImage: null,
-    //     outside: false
-    // },
-    // {
-    //     refTranslation: "enem_quizz",
-    //     title: "Enem Quizz",
-    //     link: "/projects/enem",
-    //     tech: [nextjs, tailwind],
-    //     bgImage: null,
-    //     outside: false
-    // },
-    // {
-    //     refTranslation: "pokemon",
-    //     title: "Obteniendo datos de Pokémon",
-    //     link: "/projects/pokemons",
-    //     tech: [nextjs, tailwind, typescript],
-    //     bgImage: pokemons,
-    //     outside: false
-    // },
 ];

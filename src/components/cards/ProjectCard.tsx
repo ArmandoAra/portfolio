@@ -1,6 +1,7 @@
 
 import { useTranslation } from "react-i18next";
 import FadeText from "../textAnimation/fadeTransition";
+import { Link } from "react-router";
 
 interface ProjectProps {
     refTranslation: string;
@@ -23,8 +24,8 @@ export default function ProjectCard({
 
 
     return (
-        <a
-            href={link}
+        <Link
+            to={link}
             target={outside ? "_blank" : "_self"}
             rel="noopener noreferrer"
             className="relative w-full rounded-lg border shadow-sm overflow-hidden border-transparent shadow-transparent grid group
@@ -65,12 +66,10 @@ export default function ProjectCard({
 
             {/* Contenido */}
             <div className="relative z-10 p-6">
-                <blockquote className="font-sans font-bold text-lg md:text-xl lg:text-2xl text-stone-200 [text-wrap:_balance] md:text-start text-center stroke-black">
+                <blockquote className="font-josh font-bold text-lg md:text-xl lg:text-2xl text-stone-200 [text-wrap:_balance] md:text-start text-center stroke-black">
                     <FadeText text={t(`projects.${refTranslation}.description`)} />
                 </blockquote>
             </div>
-
-
-        </a>
+        </Link>
     );
 }

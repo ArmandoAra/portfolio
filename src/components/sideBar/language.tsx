@@ -28,7 +28,7 @@ export default function LanguageSelector({ state }: { state: boolean }) {
     }, [lang]);
 
     return (
-        <div className="flex flex-col  mb-10 absolute bottom-0 w-full">
+        <div className="flex flex-col  mb-10 relative bottom-0 w-full">
             {languages.map((lang) => (
                 <Language
                     key={lang.title}

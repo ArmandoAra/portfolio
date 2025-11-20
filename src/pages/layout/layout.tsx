@@ -1,7 +1,6 @@
-
 import { useAppSelector } from "../../store";
-import "../../App.css";
 import SidebarContainer from "../../components/sideBar/SidebarContainer";
+import "../../App.css";
 
 import { Providers } from "../../store/Providers";
 import { useEffect } from "react";

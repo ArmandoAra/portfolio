@@ -60,13 +60,9 @@
             "title": "Teslo Shop",
             "description": "Una plataforma de comercio electrónico para la venta de zapatillas, construida con Next.js y Tailwind CSS. Las características incluyen autenticación de usuarios, gestión de productos y procesamiento de pagos con PayPal. Utiliza una base de datos PostgreSQL con Prisma como ORM."
         },
-        "todo_project": {
-            "title": "Aplicación de Tareas (To-Do App)",
-            "description": "Un Todo List construido con Next.js y Tailwind CSS. Con una base de datos en PostgreSQL y Prisma como ORM."
-        },
-        "enem_quizz": {
-            "title": "Enem Quizz",
-            "description": "Una aplicación de cuestionarios (quizz) inspirada en el examen ENEM de Brasil. construido con Next.js y Tailwind CSS."
+        "my_Tree": {
+            "title": "Aplicación Web My Tree",
+            "description": "Una aplicación web para la gestión de arbol familiar, donde puedes construir un mapa de familia sanguinea agregando descendencias directas, construida con Next.js y Tailwind CSS. Incluye funcionalida de  nodos para visualizar la estructura de arbol familiar."
         }
     }
 }

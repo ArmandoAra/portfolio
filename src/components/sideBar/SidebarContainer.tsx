@@ -7,15 +7,14 @@ export default function SidebarContainer({ children }: { children: React.ReactNo
         <div className="w-screen h-screen antialiased text-slate-300 selection:bg-blue-600 selection:text-white ">
             <div className={`flex h-screen `}>
                 <Sidebar state={sidebarOpen} setState={setSidebarOpen} />
-                <div
-                    className={`
-                    flex w-full  justify-center transition-all duration-300 ease-in-out
-                `}>
-                    {children}
-                </div>
+                {children}
             </div>
         </div>
     );
 }
 
-//  ${sidebarOpen ? 'pr-[220px]' : 'pr-[65px]'}
+
+{/* <div
+                    className={`
+                    flex w-full  justify-center transition-all duration-300 ease-in-out
+                `}></div> */}
