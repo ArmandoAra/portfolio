@@ -1,7 +1,9 @@
 import { motion, useInView } from 'framer-motion'
 import { useRef } from 'react';
+import { useTranslation } from 'react-i18next';
 
 export default function ProjectDescription() {
+    const { t } = useTranslation();
     const ref = useRef(null);
     const isInView = useInView(ref, { once: true, margin: "-100px" });
 
@@ -13,18 +15,16 @@ export default function ProjectDescription() {
                 transition={{ duration: 0.8 }}
             >
                 <h2 className="text-4xl md:text-5xl font-bold mb-8 text-center">
-                    Sobre el Proyecto
+                    {t('projects.my_Tree_Screen.projectDescription.title')}
                 </h2>
                 <div className="bg-slate-800/50 backdrop-blur-sm rounded-2xl p-8 border border-slate-700">
                     <p className="text-lg text-gray-300 leading-relaxed mb-6">
-                        FamilyTree es una aplicación web innovadora diseñada para simplificar la visualización
-                        y gestión de árboles genealógicos. Permite a los usuarios crear conexiones familiares
-                        de manera intuitiva, agregando padres e hijos de forma directa.
+                        {t('projects.my_Tree_Screen.projectDescription.paragraph1')}
                     </p>
+                    {/* Linew verde separadora */}
+                    <div className="w-[90%] h-[1px] bg-green-500 rounded-full my-12 mx-auto "></div>
                     <p className="text-lg text-gray-300 leading-relaxed mb-6">
-                        El sistema calcula automáticamente todas las relaciones consanguíneas, identificando
-                        tíos, sobrinos, abuelos, primos y demás parentescos sin que el usuario tenga que
-                        especificarlos manualmente.
+                        {t('projects.my_Tree_Screen.projectDescription.paragraph2')}
                     </p>
                 </div>
             </motion.div>

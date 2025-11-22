@@ -63,6 +63,66 @@
         "my_Tree": {
             "title": "Aplicação Web My Tree",
             "description": "Uma aplicação web para a gestão de árvore genealógica, onde você pode construir um mapa de família sanguínea adicionando descendentes diretos, construída com Next.js e Tailwind CSS. Inclui funcionalidade de nós para visualizar a estrutura da árvore genealógica."
+        },
+        "my_Tree_Screen": {
+            "heroSubtitle": "Visualize sua árvore genealógica de forma automática e intuitiva",
+            "gitHub": "Ver no GitHub",
+            "projectDescription": {
+                "title": "Sobre o Projeto",
+                "paragraph1": "FamilyTree é um aplicativo web inovador projetado para simplificar a visualização e o gerenciamento de árvores genealógicas. Ele permite aos usuários criar conexões familiares de forma intuitiva, adicionando pais e filhos diretamente.",
+                "paragraph2": "O sistema calcula automaticamente todas as relações de parentesco, identificando tios, sobrinhos, avós, primos e outros parentescos sem que o usuário precise especificá-los manualmente."
+            },
+            "developmentProcess": {
+                "title": "Processo de Desenvolvimento",
+                "ideacion": {
+                    "title": "1. Ideação e Planejamento",
+                    "text": "Identificação do problema: dificuldade em visualizar relações familiares extensas de forma clara e automática."
+                },
+                "brainstorming": {
+                    "title": "2. Brainstorming e Esboços",
+                    "text": "Definição de características-chave: Inserção de relações diretas como filhos e pais. Cálculo automático de relações com o usuário, visualização em nós."
+                },
+                "maquetacion": {
+                    "title": "3. Mockup e Design",
+                    "text": "Design de wireframes e fluxos de usuário, definindo a arquitetura da informação e padrões de interação."
+                },
+                "prototiping": {
+                    "title": "4. Prototipagem e Testes de Usuário",
+                    "text": "Desenvolvimento de mockups interativos no Figma, validação de UX/UI com usuários potenciais e refinamento do design."
+                },
+                "development": {
+                    "title": "5. Desenvolvimento e Implementação",
+                    "text": "Implementação com Next.js 15, TypeScript, algoritmos de cálculo de relações e visualização com nós. Banco de dados com Prisma e Cloudinary para armazenamento de imagens."
+                },
+                "technologies": "Tecnologias Utilizadas"
+            },
+            "features": {
+                "title": "Principais Funcionalidades",
+                "login": {
+                    "title": "Página de Login e Cadastro",
+                    "text": "Interface simples para acessar com uma conta existente ou criar uma nova. Design minimalista que facilita o processo de autenticação."
+                },
+                "home": {
+                    "title": "Home com e sem Usuário",
+                    "text": "Landing page inicial que apresenta as opções de login e cadastro para novos visitantes de forma clara e atraente. Uma vez autenticado, o usuário poderá acessar a criação de seu perfil e explorar as funcionalidades disponíveis."
+                },
+                "familyManagement": {
+                    "title": "Gestão Familiar",
+                    "text": "Adicione pais e filhos com um formulário onde as únicas opções obrigatórias são nome e seleção de relação."
+                },
+                "autoView": {
+                    "title": "Visualização Automática",
+                    "text": "Uma vez adicionados familiares, o sistema calcula e exibe automaticamente todas as relações familiares: tios, primos, avós, sobrinhos e mais."
+                },
+                "development": {
+                    "title": "Visualização em Nós",
+                    "text": "Representação visual interativa da árvore familiar em formato de grafo, permitindo uma navegação intuitiva pelas gerações e visualizando as conexões entre os membros da família."
+                }
+            },
+            "footer": {
+                "message": "Conectando gerações de forma visual e intuitiva",
+                "personal": "Projeto pessoal"
+            }
         }
     }
 }

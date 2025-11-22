@@ -1,6 +1,8 @@
 import { motion, useScroll, useTransform } from 'framer-motion'
 import myTree from "../../../../../assets/images/projects/mytree/over_background.png"
 import { Link } from 'react-router';
+import { use } from 'react';
+import { useTranslation } from 'react-i18next';
 
 export function SocialButton({ icon, label }: { icon: string; label: string }) {
     return (
@@ -19,6 +21,7 @@ export function SocialButton({ icon, label }: { icon: string; label: string }) {
 }
 
 export default function Hero() {
+    const { t } = useTranslation();
     const { scrollYProgress } = useScroll();
     const opacity = useTransform(scrollYProgress, [0, 0.2], [1, 0]);
     return (
@@ -46,9 +49,9 @@ export default function Hero() {
                         FamilyTree
                     </h1>
                     <p className="text-xl md:text-2xl text-gray-300 mb-8 max-w-2xl mx-auto">
-                        Visualiza tu árbol genealógico de forma automática e intuitiva
+                        {t('projects.my_Tree_Screen.heroSubtitle')}
                     </p>
-                    <SocialButton icon="💻" label="Ver en GitHub" />
+                    <SocialButton icon="💻" label={t('projects.my_Tree_Screen.gitHub')} />
                 </motion.div>
 
             </motion.section>

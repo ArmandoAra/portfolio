@@ -63,6 +63,66 @@
         "my_Tree": {
             "title": "My Tree Web Application",
             "description": "A web application for managing family trees, where you can build a bloodline family map by adding direct descendants, built with Next.js and Tailwind CSS. It includes node functionality to visualize the family tree structure."
+        },
+        "my_Tree_Screen": {
+            "heroSubtitle": "Visualize your family tree automatically and intuitively",
+            "gitHub": "View on GitHub",
+            "projectDescription": {
+                "title": "About the Project",
+                "paragraph1": "FamilyTree is an innovative web application designed to simplify the visualization and management of family trees. It allows users to create family connections intuitively, by directly adding parents and children.",
+                "paragraph2": "The system automatically calculates all blood relationships, identifying uncles, nephews, grandparents, cousins, and other kinships without the user having to manually specify them."
+            },
+            "developmentProcess": {
+                "title": "Development Process",
+                "ideacion": {
+                    "title": "1. Ideation and Planning",
+                    "text": "Problem identification: difficulty in clearly and automatically visualizing extensive family relationships."
+                },
+                "brainstorming": {
+                    "title": "2. Brainstorming and Sketching",
+                    "text": "Definition of key features: Insertion of direct relationships such as children and parents. Automatic calculation of relationships with the user, visualization in nodes."
+                },
+                "maquetacion": {
+                    "title": "3. Mockup and Design",
+                    "text": "Design of wireframes and user flows, defining the information architecture and interaction patterns."
+                },
+                "prototiping": {
+                    "title": "4. Prototyping and User Testing",
+                    "text": "Development of interactive mockups in Figma, UX/UI validation with potential users, and design refinement."
+                },
+                "development": {
+                    "title": "5. Development and Implementation",
+                    "text": "Implementation with Next.js 15, TypeScript, relationship calculation algorithms, and node visualization. Database with Prisma and Cloudinary for image storage."
+                },
+                "technologies": "Technologies Used"
+            },
+            "features": {
+                "title": "Main Features",
+                "login": {
+                    "title": "Login and Registration Page",
+                    "text": "Simple interface to log in with an existing account or create a new one. Minimalist design that facilitates the authentication process."
+                },
+                "home": {
+                    "title": "Home with and without User",
+                    "text": "Initial landing page that clearly and attractively presents login and registration options for new visitors. Once authenticated, the user will be able to access their profile creation and explore the available functionalities."
+                },
+                "familyManagement": {
+                    "title": "Family Management",
+                    "text": "Add parents and children using a form where the only required options are name and relationship selection."
+                },
+                "autoView": {
+                    "title": "Automatic Visualization",
+                    "text": "Once you add family members, the system automatically calculates and displays all family relationships: uncles, cousins, grandparents, nephews, and more."
+                },
+                "development": {
+                    "title": "Node View",
+                    "text": "Interactive visual representation of the family tree in graph form, allowing for intuitive navigation through generations and visualizing the connections between family members."
+                }
+            },
+            "footer": {
+                "message": "Connecting generations visually and intuitively",
+                "personal": "Personal Project"
+            }
         }
     }
 }
