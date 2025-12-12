@@ -12,7 +12,7 @@ import docker from "../../assets/logos/docker.png";
 import duoCorazon from "../../assets/images/duoCorazon.webp";
 import theLiazeed from "../../assets/images/the_liazeed_logo_white.png";
 import tesloImg from "../../assets/images/projects/teslo/1657891-00-A_1.jpg";
-import myTree from "../../assets/projects/myTree/over_background.webp"
+import myTree from "../../assets/images/projects/mytree/over_background.png"
 
 export const projects = [
     {
