@@ -1,7 +1,6 @@
 import { motion, useScroll, useTransform } from 'framer-motion'
-import myTree from "../../../../../assets/images/projects/mytree/over_background.png"
+import myTree from "../../../../../assets/projects/myTree/over_background.webp";
 import { Link } from 'react-router';
-import { use } from 'react';
 import { useTranslation } from 'react-i18next';
 
 export function SocialButton({ icon, label }: { icon: string; label: string }) {
