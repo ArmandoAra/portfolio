@@ -32,15 +32,14 @@ export default function MainPage() {
             <FloatingIcons />
             <div className="relative flex flex-col  xl:container m-auto px-6 md:px-12 lg:px-6 top-0 lg:top-16">
                 <motion.h1
-                    className=" sm:w-10/12 md:w-2/3 font-black   text-4xl text-center mx-auto lg:m-0 md:text-left sm:text-5xl md:text-6xl lg:w-auto  xl:text-7xl  leading-tight "
+                    className=" sm:w-10/12 md:w-2/3 font-black  text-4xl text-center mx-auto lg:m-0 md:text-left sm:text-4xl md:text-5xl lg:w-auto  xl:text-6xl  leading-tight "
                     initial={{ y: -20, opacity: 0 }}
                     animate={{ y: 0, opacity: 1 }}
                     transition={{ duration: 0.5, delay: 0.2 }}
                 >
-                    {/* Aqui me quedeee */}
                     <FadeText text={t('home.greetings')} className="text-slate-100 myname" />
                     <br className="lg:block h-1 w-full" />
-                    <span className="relative text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-cyan-500 dark:from-blue-400 dark:to-cyan-300">
+                    <span className="relative text-transparent  bg-clip-text bg-gradient-to-r from-blue-600 to-cyan-500 dark:from-blue-400 dark:to-cyan-300">
                         <FadeText text={t('home.profesion')} />
                     </span>.</motion.h1>
                 <motion.div className="lg:flex"

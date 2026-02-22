@@ -66,16 +66,18 @@ function Language({
     };
 
     return (
-        <div onClick={() => handleLanguageChange(title as Language)} className={`flex justify-center items-center transition-all gap-2
+        <div onClick={() => handleLanguageChange(title as Language)}
+            className={`flex items-center transition-all gap-2
                                  duration-300 ease-in-out relative cursor-pointer
                                 hover:bg-slate-900/65 w-full h-10
+                                ${state ? 'px-6 justify-between' : 'px-0 justify-center'}
                                  ${(langActive)
                 ? 'before:content-[""] before:absolute before:right-0 before:h-full before:w-1 before:bg-orange-400 before:rounded-l-lg before:shadow-[-10px_0_30px_10px_rgba(230,200,225,0.6)]'
                 : ''
             }
                                 `}>
             <img src={imageSrc} alt={title} className="w-9 h-6 rounded-xl" width={26} height={26} />
-            {state && <span className="text-slate-800 ">{title}</span>}
+            {state && <span className="text-slate-800 ">{title.toLocaleUpperCase()}</span>}
         </div>
     );
 }

@@ -1,8 +1,9 @@
 import { motion, useInView } from 'framer-motion'
 import { useRef } from 'react';
 import { useTranslation } from 'react-i18next';
+import { projectsPage } from '../../constants';
 
-export default function ProjectDescription() {
+export default function ProjectDescription({project}: {project: string}) {
     const { t } = useTranslation();
     const ref = useRef(null);
     const isInView = useInView(ref, { once: true, margin: "-100px" });
@@ -15,16 +16,16 @@ export default function ProjectDescription() {
                 transition={{ duration: 0.8 }}
             >
                 <h2 className="text-4xl md:text-5xl font-bold mb-8 text-center">
-                    {t('projects.my_Tree_Screen.projectDescription.title')}
+                    {t(`projects.${project}.projectDescription.title`)}
                 </h2>
                 <div className="bg-slate-800/50 backdrop-blur-sm rounded-2xl p-8 border border-slate-700">
                     <p className="text-lg text-gray-300 leading-relaxed mb-6">
-                        {t('projects.my_Tree_Screen.projectDescription.paragraph1')}
+                        {t(`projects.${projectsPage[project as keyof typeof projectsPage].translate}.projectDescription.paragraph1`)}
                     </p>
                     {/* Linew verde separadora */}
                     <div className="w-[90%] h-[1px] bg-green-500 rounded-full my-12 mx-auto "></div>
                     <p className="text-lg text-gray-300 leading-relaxed mb-6">
-                        {t('projects.my_Tree_Screen.projectDescription.paragraph2')}
+                        {t(`projects.${projectsPage[project as keyof typeof projectsPage].translate}.projectDescription.paragraph2`)}
                     </p>
                 </div>
             </motion.div>

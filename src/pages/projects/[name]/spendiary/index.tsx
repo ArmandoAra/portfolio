@@ -8,24 +8,24 @@ import ProjectDescription from "../components/ProjectDescription";
 
 
 
-export default function MyTreeProject() {
+export default function SpendiaryProject() {
 
     return (
-        <div className="flex flex-col w-[84vw] md:w-full ">
+        <div className="flex flex-col w-[84vw] md:w-full bg-slate-950">
             {/* Hero Section */}
-            <Hero project="my_Tree" fromColor="green-400" toColor="green-800" />
+            <Hero project="spendiary" />
 
             {/* Project Description */}
-            <ProjectDescription project="my_Tree" />
+            <ProjectDescription project="spendiary" />
 
             {/* Development Process */}
-            <DevelopmentProcess project="my_Tree" />
+            <DevelopmentProcess project="spendiary" />
 
             {/* Features Showcase */}
-            <FeaturesShowcase project="my_Tree" />
+            <FeaturesShowcase project="spendiary" />
 
             {/* Footer */}
-            <Footer project="my_Tree" />
+            <Footer project="spendiary"/>
         </div>
     );
 };

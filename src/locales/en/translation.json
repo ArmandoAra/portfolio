@@ -1,9 +1,9 @@
 {
     "home": {
-        "metatitle": "Armando's Portfolio - Web Developer",
-        "metadescription": "Welcome to my portfolio! I'm Armando, a passionate Web Developer dedicated to creating beautiful and functional digital experiences.",
+        "metatitle": "Armando's Portfolio - Web and Mobile Apps Developer",
+        "metadescription": "Welcome to my portfolio! I'm Armando, a passionate Developer dedicated to creating beautiful and functional digital experiences.",
         "greetings": "Hi, I’m Armando",
-        "profesion": "Web Developer",
+        "profesion": "Web and Mobile Apps Developer",
         "description": "With a passion for creating digital solutions that combine design and functionality. I also have experience in backend and other software development technologies, which allows me to have a comprehensive view of projects."
     },
     "buttons": {
@@ -22,9 +22,9 @@
     },
     "aboutMe": {
         "metatitle": "About Me",
-        "metadescription": "Learn more about Armando, a passionate Web Developer with a strong background in modern web technologies and continuous learning.",
+        "metadescription": "Learn more about Armando, a passionate Developer with a strong background in modern technologies and continuous learning.",
         "title": "About Me",
-        "description": "Web developer in training with a strong passion for technology and continuous learning. Four years ago, I began my programming journey through online courses, starting with Python and exploring from the basics of HTML and CSS to more advanced frameworks such as Django, Flask, and Tkinter. Over time, I discovered new learning platforms like Udemy, Platzi, and Coursera, which allowed me to expand my stack with modern technologies: JavaScript, React, Next.js, Tailwind, Git/GitHub, SQL and NoSQL databases, along with solid foundations in software engineering. Recently, I completed the Meta Front-End Developer Certificate (Coursera), where I built practical projects with React, applied UX/UI principles, and developed a capstone project that integrated all my learning.",
+        "description": "Software developer with a strong passion for technology and continuous learning. Four years ago, I began my programming journey through online courses, starting with Python and exploring from the basics of HTML and CSS to more advanced frameworks such as Django, Flask, and Tkinter. Over time, I discovered new learning platforms like Udemy, Platzi, and Coursera, which allowed me to expand my stack with modern technologies: JavaScript, React, Next.js, Tailwind, Git/GitHub, SQL and NoSQL databases, along with solid foundations in software engineering. Recently, I completed the Meta Front-End Developer Certificate (Coursera), where I built practical projects with React, applied UX/UI principles, and developed a capstone project that integrated all my learning.",
         "certifications": {
             "title": "Certifications",
             "platzi": "I studied web development fundamentals and more with courses from Platzi. I learned to build responsive websites and web applications using the latest technologies.",
@@ -62,9 +62,7 @@
         },
         "my_Tree": {
             "title": "My Tree Web Application",
-            "description": "A web application for managing family trees, where you can build a bloodline family map by adding direct descendants, built with Next.js and Tailwind CSS. It includes node functionality to visualize the family tree structure."
-        },
-        "my_Tree_Screen": {
+            "description": "A web application for managing family trees, where you can build a bloodline family map by adding direct descendants, built with Next.js and Tailwind CSS. It includes node functionality to visualize the family tree structure.",
             "heroSubtitle": "Visualize your family tree automatically and intuitively",
             "gitHub": "View on GitHub",
             "projectDescription": {
@@ -123,6 +121,68 @@
                 "message": "Connecting generations visually and intuitively",
                 "personal": "Personal Project"
             }
-        }
+        },
+        "spendiary": {
+            "title": "Spendiary",
+            "description": "A personal finance management application 100% offline built with React Native. It allows users to track their expenses, set budgets, and visualize their financial health through intuitive charts and reports.",
+            "heroSubtitle": "Financial data sovereignty: private, offline, and efficient",
+            "gitHub": "View on GitHub",
+            "projectDescription": {
+                "title": "About the Project",
+                "paragraph1": "Spendiary is a privacy-first personal finance mobile app built with React Native. Unlike cloud-based alternatives, it operates 100% offline, ensuring users retain total ownership of their data through high-performance local storage and zero external tracking.",
+                "paragraph2": "The app features intuitive expense tracking, dynamic data visualization with charts and heatmaps, and a secure backup system using JSON files. Spendiary empowers users to manage their finances with confidence, prioritizing privacy."
+            },
+            "developmentProcess": {
+                "title": "Development Process",
+                "ideacion": {
+                    "title": "1. Ideation & Planning",
+                    "text": "Focusing on data sovereignty and removing the friction of cloud sign-ups for daily expense management."
+                },
+                "brainstorming": {
+                    "title": "2. Data Architecture",
+                    "text": "Defining a flexible JSON schema to enable data portability (Export/Import) and ultra-fast persistence."
+                },
+                "maquetacion": {
+                    "title": "3. User-Centric UI/UX",
+                    "text": "Designing a clean interface with native Light/Dark mode support and optimized navigation flows."
+                },
+                "prototiping": {
+                    "title": "4. Data Visualization",
+                    "text": "Iterating on visual components (pie charts and heatmaps) to transform raw data into actionable financial insights."
+                },
+                "development": {
+                    "title": "5. Tech Stack",
+                    "text": "Leveraging React Native's New Architecture, Zustand for state management, and MMKV for storage performance."
+                },
+                "technologies": "Core Technologies"
+            },
+            "features": {
+                "title": "Key Features",
+                "security": {
+                    "title": "Security & Biometrics",
+                    "text": "Data protection through local PIN and biometric authentication (Fingerprint or FaceID). A native security layer that ensures only the user has access to their sensitive financial information."
+                },
+                "transactions": {
+                    "title": "Transaction Management",
+                    "text": "Fluid logging of income and expenses with support for multiple categories. Optimized implementation using FlashList to maintain 60fps performance even with thousands of records."
+                },
+                "analytics": {
+                    "title": "Advanced Visual Analytics",
+                    "text": "Dynamic visualization of financial habits using interactive pie charts and heatmaps. Developed with Victory Native and Skia for a high-level analytical visual experience."
+                },
+                "budgets": {
+                    "title": "Budget Planning",
+                    "text": "Smart system to create budgets and spending limits per category. It allows users to monitor their financial health and adjust their goals in real-time intuitively."
+                },
+                "portability_and_appearance": {
+                    "title": "Portability and Appearance",
+                    "text": "100% offline functionality with a JSON-based export and import system. The user has total ownership of their data, enabling backups and restorations without cloud dependency."
+                }
+            },
+            "footer": {
+                "message": "Empowering your financial management with privacy and efficiency",
+                "personal": "Open Source Personal Project"
+            }
+}
     }
 }

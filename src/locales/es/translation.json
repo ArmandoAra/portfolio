@@ -1,9 +1,9 @@
 {
     "home": {
-        "metatitle": "Portafolio de Armando - Desarrollador Web",
-        "metadescription": "¡Bienvenido a mi portafolio! Soy Armando, un apasionado Desarrollador Web dedicado a crear experiencias digitales hermosas y funcionales.",
+        "metatitle": "Portafolio de Armando - Desarrollador Web y de Apps Móviles",
+        "metadescription": "¡Bienvenido a mi portafolio! Soy Armando, un apasionado Desarrollador dedicado a crear experiencias digitales hermosas y funcionales.",
         "greetings": "Hola, yo soy Armando ",
-        "profesion": "Desarrollador Web",
+        "profesion": "Desarrollador Web y de Aplicaciones Móviles",
         "description": "Con una pasión por crear soluciones digitales que combinan diseño y funcionalidad. También tengo experiencia en backend y otras tecnologías relacionadas con el desarrollo de software, lo que me permite tener una visión integral de los proyectos."
     },
     "buttons": {
@@ -24,7 +24,7 @@
         "metatitle": "Sobre mí",
         "metadescription": "Conoce más sobre mí, mi experiencia, habilidades y certificaciones en desarrollo web y móvil.",
         "title": "Sobre mí",
-        "description": "Desarrollador web en formación con una fuerte pasión por la tecnología y el aprendizaje continuo.Hace cuatro años inicié mi camino en la programación a través de cursos online, comenzando con Python y explorando desde lo básico de HTML y CSS hasta frameworks más avanzados como Django, Flask y Tkinter.  Con el tiempo descubrí nuevas plataformas de aprendizaje como Udemy, Platzi y Coursera, lo que me permitió ampliar mi stack con tecnologías modernas: JavaScript, React, Next.js, Tailwind, Git/GitHub, bases de datos SQL y NoSQL, además de fundamentos sólidos de ingeniería de software. Recientemente completé el programa Meta Front-End Developer Certificate (Coursera), donde desarrollé proyectos prácticos con React, enfoques de UX/UI, y un capstone project que integró todo lo aprendido.",
+        "description": "Desarrollador de software con una fuerte pasión por la tecnología y el aprendizaje continuo.Hace cuatro años inicié mi camino en la programación a través de cursos online, comenzando con Python y explorando desde lo básico de HTML y CSS hasta frameworks más avanzados como Django, Flask y Tkinter.  Con el tiempo descubrí nuevas plataformas de aprendizaje como Udemy, Platzi y Coursera, lo que me permitió ampliar mi stack con tecnologías modernas: JavaScript, React, Next.js, Tailwind, Git/GitHub, bases de datos SQL y NoSQL, además de fundamentos sólidos de ingeniería de software. Recientemente completé el programa Meta Front-End Developer Certificate (Coursera), donde desarrollé proyectos prácticos con React, enfoques de UX/UI, y un capstone project que integró todo lo aprendido.",
         "certifications": {
             "title": "Certificaciones",
             "platzi": "Estudie los fundamentos de web development entre otros con cursos de Platzi. A construir sitios web y aplicaciones web responsivas utilizando las últimas tecnologías.",
@@ -62,9 +62,7 @@
         },
         "my_Tree": {
             "title": "Aplicación Web My Tree",
-            "description": "Una aplicación web para la gestión de arbol familiar, donde puedes construir un mapa de familia sanguinea agregando descendencias directas, construida con Next.js y Tailwind CSS. Incluye funcionalida de  nodos para visualizar la estructura de arbol familiar."
-        },
-        "my_Tree_Screen": {
+            "description": "Una aplicación web para la gestión de arbol familiar, donde puedes construir un mapa de familia sanguinea agregando descendencias directas, construida con Next.js y Tailwind CSS. Incluye funcionalida de  nodos para visualizar la estructura de arbol familiar.",
             "heroSubtitle": "Visualiza tu árbol genealógico de forma automática e intuitiva",
             "gitHub": "Ver en GitHub",
             "projectDescription": {
@@ -123,6 +121,68 @@
                 "message": "Conectando generaciones de forma visual e intuitiva",
                 "personal": "Proyecto personal"
             }
-        }
+        },
+        "spendiary": {
+            "title": "Spendiary",
+            "description": "Una aplicación móvil 100% offline para el seguimiento de gastos personales, desarrollada con React Native. Permite a los usuarios registrar sus gastos diarios, categorizar sus transacciones y visualizar gráficos de sus hábitos de gasto a lo largo del tiempo.",
+            "heroSubtitle": "Soberanía de datos financieros: privada, offline y eficiente",
+            "gitHub": "Ver Código en GitHub",
+            "projectDescription": {
+                "title": "Sobre el Proyecto",
+                "paragraph1": "Spendiary es una solución de finanzas personales 'Privacy-first' construida con React Native. A diferencia de las apps tradicionales, funciona 100% sin conexión, eliminando intermediarios y garantizando que el usuario sea el único dueño de su información sensible mediante almacenamiento local de alto rendimiento.",
+                "paragraph2": "La aplicación ofrece un seguimiento intuitivo de los gastos, visualización dinámica de datos con gráficos y mapas de calor, y un sistema de respaldo seguro mediante archivos JSON. Spendiary permite a los usuarios gestionar sus finanzas con confianza, priorizando la privacidad."
+            },
+            "developmentProcess": {
+                "title": "Proceso de Desarrollo",
+                "ideacion": {
+                    "title": "1. Ideación y Planificación",
+                    "text": "Enfoque en la soberanía de datos y la eliminación de la fricción que generan los registros en la nube para gestionar gastos diarios."
+                },
+                "brainstorming": {
+                    "title": "2. Arquitectura de Datos",
+                    "text": "Definición de un esquema JSON flexible para permitir la portabilidad de datos (Export/Import) y persistencia ultrarrápida."
+                },
+                "maquetacion": {
+                    "title": "3. UI/UX Centrada en el Usuario",
+                    "text": "Diseño de una interfaz limpia con soporte nativo para temas claro/oscuro y flujos de navegación optimizados para una carga rápida."
+                },
+                "prototiping": {
+                    "title": "4. Visualización de Datos",
+                    "text": "Iteración de componentes visuales (gráficos de pie y mapas de calor) para transformar datos crudos en información accionable."
+                },
+                "development": {
+                    "title": "5. Stack Tecnológico",
+                    "text": "Uso de la Nueva Arquitectura de React Native, Zustand para el estado global y MMKV para una persistencia de datos 10 veces más rápida que AsyncStorage."
+                },
+                "technologies": "Tecnologías Destacadas"
+            },
+            "features": {
+                "title": "Características Principales",
+                "security": {
+                    "title": "Seguridad y Biometría",
+                    "text": "Protección de datos mediante PIN local y autenticación biométrica (Huella o Rostro). Una capa de seguridad nativa que garantiza que solo el usuario tenga acceso a su información financiera."
+                },
+                "transactions": {
+                    "title": "Gestión de Transacciones",
+                    "text": "Registro fluido de ingresos y gastos con soporte para múltiples categorías. Implementación optimizada con FlashList para mantener un rendimiento de 60fps incluso con miles de registros."
+                },
+                "analytics": {
+                    "title": "Análisis Visual Avanzado",
+                    "text": "Visualización dinámica de hábitos financieros mediante gráficos de pie y mapas de calor interactivos. Desarrollado con Victory Native y Skia para una experiencia visual analítica de alto nivel."
+                },
+                "budgets": {
+                    "title": "Planificación de Presupuestos",
+                    "text": "Sistema inteligente para crear presupuestos y límites de gasto por categoría. Permite al usuario monitorear su salud financiera y ajustar sus objetivos en tiempo real de forma intuitiva."
+                },
+                "portability_and_appearance": {
+                    "title": "Portabilidad y Apariencia",
+                    "text": "Funcionamiento 100% offline con sistema de exportación e importación en formato JSON. El usuario es el dueño total de sus datos, permitiendo realizar respaldos y restauraciones sin depender de la nube."
+                }
+            },
+            "footer": {
+                "message": "Empoderando tu gestión financiera con privacidad y eficiencia",
+                "personal": "Proyecto personal con código abierto"
+            }
+}
     }
 }

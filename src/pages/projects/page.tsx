@@ -1,6 +1,5 @@
 import ProjectCard from "../../components/cards/ProjectCard";
 
-
 import { useMetadata } from "../../hooks/metadata/useMetadata";
 import { useTranslation } from "react-i18next";
 import { motion } from "framer-motion";
@@ -15,9 +14,10 @@ export default function Projects() {
         title: t('projects.metatitle'),
         description: t('projects.metadescription')
     });
+
     return (
         <motion.div
-            className="fles flex-col overflow-scroll"
+            className="fles flex-col overflow-scroll justify-center items-center w-full"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
